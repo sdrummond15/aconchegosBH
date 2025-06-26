@@ -1,0 +1,8 @@
+# =======================
+# JOOMLA .GITIGNORE
+# =======================
+
+# Configurações sensíveis
+configuration.php
+.htaccess
+htacess.txt
