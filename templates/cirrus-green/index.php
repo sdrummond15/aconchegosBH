@@ -17,12 +17,16 @@ $logo = $this->params->get('logo', $logopath);
 $logoimage = $this->params->get('logoimage');
 $sitetitle = $this->params->get('sitetitle');
 $sitedescription = $this->params->get('sitedescription');
+
+JHtml::_('jquery.framework');
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>">
 
 <head>
 	<jdoc:include type="head" />
+	<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/fonts/font-awesome.min.css" type="text/css" />
+
 	<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/system.css" type="text/css" />
 	<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/general.css" type="text/css" />
 	<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/template.css" type="text/css" />
@@ -72,30 +76,32 @@ $sitedescription = $this->params->get('sitedescription');
 
 				</div>
 
-				<!-- Search -->
-				<div id="search">
-					<jdoc:include type="modules" name="position-0" />
+				<div id="topmenu_wrap">
+					<!-- Search -->
+					<div id="search">
+						<jdoc:include type="modules" name="position-0" />
+					</div>
+
+					<div id="topmenu">
+						<jdoc:include type="modules" name="position-1" />
+					</div>
 				</div>
+
 			</div>
 		</div>
 
-		<div id="topmenu_wrap">
-			<div id="topmenu">
-				<jdoc:include type="modules" name="position-1" />
+		<!-- Breadcrumbs -->
+		<?php if ($this->countModules('position-2')) : ?>
+			<div id="breadcrumbs">
+				<jdoc:include type="modules" name="position-2" />
 			</div>
-		</div>
-
+		<?php endif; ?>
 
 		<!-- Content/Menu Wrap -->
 		<div id="content-menu_wrap_bg">
 			<div id="content-menu_wrap">
 
-				<!-- Breadcrumbs -->
-				<?php if ($this->countModules('position-2')) : ?>
-					<div id="breadcrumbs">
-						<jdoc:include type="modules" name="position-2" />
-					</div>
-				<?php endif; ?>
+
 
 
 				<!-- Left Menu -->
@@ -141,34 +147,47 @@ $sitedescription = $this->params->get('sitedescription');
 						</div>
 					</div>
 
-
-					<!-- Footer -->
-					<div id="footer_wrap">
-						<div id="footer">
-							<jdoc:include type="modules" name="position-14" />
-						</div>
-					</div>
-
-
-					<!-- Banner/Links -->
-					<div id="box_wrap">
-						<div id="box_placeholder">
-							<div id="box1">
-								<jdoc:include type="modules" name="position-9" style="xhtml" />
-							</div>
-							<div id="box2">
-								<jdoc:include type="modules" name="position-10" style="xhtml" />
-							</div>
-							<div id="box3">
-								<jdoc:include type="modules" name="position-11" style="xhtml" />
+					<div id="bottom_wrap">
+						<!-- Footer -->
+						<div id="footer_wrap">
+							<div id="footer">
+								<jdoc:include type="modules" name="position-14" />
 							</div>
 						</div>
+
+
+						<!-- Banner/Links -->
+						<div id="box_wrap">
+							<div id="box_placeholder">
+								<div id="box1">
+									<jdoc:include type="modules" name="position-9" style="xhtml" />
+								</div>
+								<div id="box2">
+									<jdoc:include type="modules" name="position-10" style="xhtml" />
+								</div>
+								<div id="box3">
+									<jdoc:include type="modules" name="position-11" style="xhtml" />
+								</div>
+							</div>
+						</div>
+
+						<!--<div id="push"></div>-->
+						<div id="copyright">
+							Copyright&copy;<?php echo date('Y'); ?> <?php echo $sitename; ?> - Todos os direitos reservados
+
+							<a class="sd" href="http://www.sdrummond.com.br" title="Sdrummond Tecnologia" target="_blank">
+								<img src="/sagp/images/sd.png" alt="Sdrummond Tecnologia" title="Sdrummond Tecnologia">
+							</a>
+						</div>
+
 					</div>
 
-
-					<div id="push"></div>
+					<div id="whatsapp">
+						<jdoc:include type="modules" name="whatsapp" style="none" />
+					</div>
 
 			</div>
+
 
 
 
@@ -180,10 +199,7 @@ $sitedescription = $this->params->get('sitedescription');
 
 
 
-			<div id="copyright">
-				&copy;<?php echo date('Y'); ?> <?php echo $sitename; ?> | <a href="http://www.hurricanemedia.net">Designed by Hurricane </a><a href="http://www.erhvervindex.dk">Media</a><br />
-				<div class="cp2"><img src="templates/<?php echo $this->template; ?>/images/cr.gif" alt="Copyright" /></div>
-			</div>
+
 
 </body>
 
