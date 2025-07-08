@@ -176,7 +176,7 @@ JHtml::_('jquery.framework');
 							Copyright&copy;<?php echo date('Y'); ?> <?php echo $sitename; ?> - Todos os direitos reservados
 
 							<a class="sd" href="http://www.sdrummond.com.br" title="Sdrummond Tecnologia" target="_blank">
-								<img src="/sagp/images/sd.png" alt="Sdrummond Tecnologia" title="Sdrummond Tecnologia">
+								<img src="images/sd.png" alt="Sdrummond Tecnologia" title="Sdrummond Tecnologia">
 							</a>
 						</div>
 
