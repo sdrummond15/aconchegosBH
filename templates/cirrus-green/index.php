@@ -84,7 +84,7 @@ JHtml::_('jquery.framework');
 					</div>
 
 					<div id="topmenu">
-						<jdoc:include type="modules" name="menu-resp" />
+						<jdoc:include type="modules" name="position-1" />
 					</div>
 					<div id="menu-toggle">&#9776;</div>
 				</div>
@@ -93,10 +93,7 @@ JHtml::_('jquery.framework');
 		</div>
 
 		<nav id="menu-resp">
-			<a href="#">Início</a>
-			<a href="#">Serviços</a>
-			<a href="#">Sobre</a>
-			<a href="#">Contato</a>
+			<jdoc:include type="modules" name="menu-resp" style="xhtml" />
 		</nav>
 
 		<!-- Breadcrumbs -->

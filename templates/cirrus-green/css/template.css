@@ -2266,41 +2266,59 @@ body.contentpane a:hover {
 	font-size: 28px;
 	cursor: pointer;
 	padding: 10px;
+	align-self: flex-end;
 	background: #333;
 	color: #fff;
 	width: fit-content;
-	margin: 10px auto;
-  }
-  
-  #menu-resp {
-	display: none;
+	margin: 10px 20px;
+}
+
+#menu-resp {
+	border-top: solid 1px #383ca6;
 	position: absolute;
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.47);
-    margin-top: 1px;
+	margin-top: 1px;
 	z-index: 9999;
 	flex-direction: column;
 	gap: 10px;
-	padding: 1rem;
+	padding: 0.5rem;
 	text-align: center;
 	box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
-  }
-  
-  #menu-resp a {
-	color: white;
-	text-decoration: none;
-	font-size: 1.25rem;
-  }
-  
-  #menu-resp a:hover {
-	color: #90c140;
-  }
-  
-  
-  #menu-resp.active {
+	transition: opacity 0.3s ease, transform 0.3s ease;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(-10px);
+	transition: opacity 0.3s ease, transform 0.3s ease;
+	pointer-events: none;
 	display: flex;
-  }
-  
+}
+
+#menu-resp a {
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 1.125rem;
+}
+
+#menu-resp a:hover {
+	color: #7b9ff0;
+}
+
+#menu-resp ul {
+	list-style: none;
+}
+
+#menu-resp li+li {
+	margin-top: 15px;
+}
+
+#menu-resp li.active a{
+	color: #7b9ff0;
+}
+#menu-resp .moduletable {
+	margin-bottom: 0px;
+}
 
 @media screen and (max-width: 1024px) {
 	#box1 {
@@ -2335,16 +2353,22 @@ body.contentpane a:hover {
 	p {
 		font-size: 1.05rem;
 	}
-	
+
 	#topmenu {
 		display: none;
 		flex-direction: column;
 	}
 
 	#menu-toggle {
-		display: block;
+		display: flex;
 	}
 
+	#menu-resp.active {
+		opacity: 1;
+		visibility: visible;
+		transform: translateY(0);
+		pointer-events: auto;
+	}
 }
 
 @media screen and (max-width: 768px) {
