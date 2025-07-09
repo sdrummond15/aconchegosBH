@@ -35,7 +35,7 @@ $author = $params->get('author');
 
 $document->addStyleSheet($modPath.'assets/css/style.css');
 $document->addScript($modPath.'assets/js/swiper.js');
-$document->addStyleDeclaration('.slider{ height:'.$params->get('styleh').'; }');
+// $document->addStyleDeclaration('.slider{ height:'.$params->get('styleh').'; }');
 if($darklayer) $document->addStyleDeclaration('.slider .swiper-container .swiper-slide:after{content: ""; width: 100%; height: 100vh; position: absolute; left: 0; bottom: 0; z-index: 3; background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(19,19,20,0.7) 100%);
 background-image: -o-linear-gradient(to bottom, rgba(0,0,0,0.1) 0%,rgba(19,19,20,0.6) 100%);
 background-image: -moz-linear-gradient(to bottom, rgba(0,0,0,0.1) 0%,rgba(19,19,20,0.6) 100%);

@@ -416,13 +416,14 @@ hr {
 /** Header **/
 
 #header_wrap {
-    background-color: #fff3cd;
-    min-width: 960px;
+	background-color: #fff3cd;
+
 }
 
 #header {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
 	width: 100%;
 	max-width: 1170px;
 	align-items: flex-start;
@@ -443,7 +444,7 @@ hr {
 	color: #90c140;
 	padding-top: 20px;
 	padding-bottom: 8px;
-	margin-right: auto;	
+	margin-right: auto;
 }
 
 #logo a {
@@ -467,12 +468,11 @@ hr {
 #topnav_wrap {
 	background-color: #000;
 	overflow: auto;
-	min-width: 960px;
+	/* min-width: 960px; */
 }
 
 
 #topnav {
-	width: 900px;
 	margin: auto;
 	font-size: 0.87em;
 }
@@ -690,7 +690,7 @@ hr {
 	min-height: 400px;
 	margin-bottom: -1px;
 	/* iPhone/iPad fix */
-	min-width: 960px;
+	/* min-width: 960px; */
 }
 
 
@@ -1791,12 +1791,13 @@ a.feed-link {
 #footer_wrap {
 	background-color: #fafafa;
 	padding-bottom: 20px;
-	min-width: 960px;
+	/* min-width: 960px; */
 }
 
 #footer {
 	clear: both;
-	width: 900px;
+	width: 100%;
+	max-width: 1170px;
 	margin: auto;
 	padding-top: 26px;
 	background-color: #fafafa;
@@ -1821,7 +1822,7 @@ a.feed-link {
 	color: #FFF;
 	margin-bottom: -1px;
 	/* iPhone/iPad fix */
-	width: 960px;
+	/* width: 960px; */
 }
 
 #copyright a {
@@ -1897,8 +1898,8 @@ a.feed-link {
 	width: 300px;
 	margin: 0;
 	padding: 0;
-    display: flex;
-    justify-content: flex-end;
+	display: flex;
+	justify-content: flex-end;
 	font-weight: bold;
 }
 
@@ -2129,113 +2130,114 @@ body.contentpane a:hover {
 	position: fixed;
 	bottom: 40px;
 	right: 40px;
-	background-color: #25D366; /* verde WhatsApp */
+	background-color: #25D366;
+	/* verde WhatsApp */
 	color: white;
 	border-radius: 50%;
 	padding: 15px 18px;
 	font-size: 28px;
 	z-index: 9999;
-	box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 	text-decoration: none;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-  }
-  
-  #whatsapp-button:hover {
+}
+
+#whatsapp-button:hover {
 	background-color: #1ebe57;
 	color: white;
-  }
+}
 
-  .estrutura-secao {
+.estrutura-secao {
 	display: flex;
 	align-items: center;
 	gap: 2rem;
-  }
+}
 
-  .estrutura-introducao {	
+.estrutura-introducao {
 	margin-bottom: 3rem;
 	text-align: center;
-  }
+}
 
-  .service-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(240px, 1fr));
-    gap: 1.5rem;
+.service-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(240px, 1fr));
+	gap: 1.5rem;
 
 }
 
 .service-box {
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+	background-color: #ffffff;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
 	margin-bottom: 20px;
 }
 
 .service-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+	transform: translateY(-5px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .service-image-wrapper {
-    position: relative;
-    width: 100%;
-    padding-top: 300px;
-    overflow: hidden;
+	position: relative;
+	width: 100%;
+	padding-top: 300px;
+	overflow: hidden;
 }
 
 .service-image-wrapper img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	display: block;
 }
 
 .service-content {
-    padding: 1rem;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+	padding: 1rem;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
 }
 
 .service-title {
-    font-size: 1.25rem;
-    margin: 0 0 0.5rem 0;
-    color: #333333;
-    line-height: 1.2;
+	font-size: 1.25rem;
+	margin: 0 0 0.5rem 0;
+	color: #333333;
+	line-height: 1.2;
 }
 
 .service-description {
-    flex: 1;
-    font-size: 1rem;
-    color: #666666;
-    margin: 0 0 1rem 0;
-    line-height: 1.4;
+	flex: 1;
+	font-size: 1rem;
+	color: #666666;
+	margin: 0 0 1rem 0;
+	line-height: 1.4;
 }
 
 .service-link {
-    align-self: flex-start;
-    font-size: 1.275rem;
-    font-weight: 500;
+	align-self: flex-start;
+	font-size: 1.275rem;
+	font-weight: 500;
 	background-color: #ffb224;
-    color: white;
-    text-decoration: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 8px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+	color: white;
+	text-decoration: none;
+	padding: 0.75rem 1.5rem;
+	border-radius: 8px;
+	transition: background-color 0.3s ease, color 0.3s ease;
 	font-weight: bold;
 }
 
 .service-link:hover {
-    background-color: #383ca6;
-    color: #ffffff;
+	background-color: #383ca6;
+	color: #ffffff;
 }
 
 .bloco-leia-mais-home {
@@ -2247,31 +2249,73 @@ body.contentpane a:hover {
 .bloco-leia-mais-home>div>a {
 	background-color: #383ca6;
 	color: white;
-    padding: 0.75rem 1.5rem;
+	padding: 0.75rem 1.5rem;
 	border-radius: 8px;
 	text-decoration: none;
 	font-weight: bold;
 	float: right;
 }
 
-.bloco-leia-mais-home>div>a:hover{
-	background-color:#ffb224;
+.bloco-leia-mais-home>div>a:hover {
+	background-color: #ffb224;
 	transition: linear 300ms;
 }
 
-@media (max-width: 1024px) {
+#menu-toggle {
+	display: none;
+	font-size: 28px;
+	cursor: pointer;
+	padding: 10px;
+	background: #333;
+	color: #fff;
+	width: fit-content;
+	margin: 10px auto;
+  }
+  
+  #menu-resp {
+	display: none;
+	position: absolute;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.47);
+    margin-top: 1px;
+	z-index: 9999;
+	flex-direction: column;
+	gap: 10px;
+	padding: 1rem;
+	text-align: center;
+	box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  #menu-resp a {
+	color: white;
+	text-decoration: none;
+	font-size: 1.25rem;
+  }
+  
+  #menu-resp a:hover {
+	color: #90c140;
+  }
+  
+  
+  #menu-resp.active {
+	display: flex;
+  }
+  
+
+@media screen and (max-width: 1024px) {
 	#box1 {
 		margin-left: 20px;
 	}
 
 	#box3 {
-		margin-right:20px;
+		margin-right: 20px;
 	}
 
 	p {
 		font-size: 1.125rem;
 	}
-	.custom-endereco-rodape a{
+
+	.custom-endereco-rodape a {
 		font-size: 1.125rem;
 	}
 
@@ -2287,6 +2331,27 @@ body.contentpane a:hover {
 	}
 }
 
-@media (max-width: 992px){
-	font-size: 1.05rem;
+@media screen and (max-width: 992px) {
+	p {
+		font-size: 1.05rem;
+	}
+	
+	#topmenu {
+		display: none;
+		flex-direction: column;
+	}
+
+	#menu-toggle {
+		display: block;
+	}
+
 }
+
+@media screen and (max-width: 768px) {
+	p {
+		margin: 30px 0;
+	}
+
+}
+
+@media screen and (max-width: 600px) {}

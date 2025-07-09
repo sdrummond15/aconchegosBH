@@ -85,6 +85,7 @@
 		<position>position-14</position>
 		<position>position-15</position>
 		<position>whatsapp</position>
+		<position>menu-resp</position>
 	</positions>
 
 	<languages folder="language">

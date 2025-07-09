@@ -25,8 +25,8 @@ JHtml::_('jquery.framework');
 
 <head>
 	<jdoc:include type="head" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/fonts/font-awesome.min.css" type="text/css" />
-
 	<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/system.css" type="text/css" />
 	<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/general.css" type="text/css" />
 	<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/template.css" type="text/css" />
@@ -37,6 +37,7 @@ JHtml::_('jquery.framework');
 	<link rel="manifest" href="images/favicon/site.webmanifest">
 	<link href='//fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css' />
 	<script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/sfhover.js"></script>
+	<script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/responsive-menu.js"></script>
 </head>
 
 <body>
@@ -83,12 +84,20 @@ JHtml::_('jquery.framework');
 					</div>
 
 					<div id="topmenu">
-						<jdoc:include type="modules" name="position-1" />
+						<jdoc:include type="modules" name="menu-resp" />
 					</div>
+					<div id="menu-toggle">&#9776;</div>
 				</div>
 
 			</div>
 		</div>
+
+		<nav id="menu-resp">
+			<a href="#">Início</a>
+			<a href="#">Serviços</a>
+			<a href="#">Sobre</a>
+			<a href="#">Contato</a>
+		</nav>
 
 		<!-- Breadcrumbs -->
 		<?php if ($this->countModules('position-2')) : ?>
