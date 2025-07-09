@@ -1791,7 +1791,6 @@ a.feed-link {
 #footer_wrap {
 	background-color: #fafafa;
 	padding-bottom: 20px;
-	/* min-width: 960px; */
 }
 
 #footer {
@@ -1882,24 +1881,26 @@ a.feed-link {
 }
 
 #box1 {
-	width: 300px;
+	max-width: 300px;
 	margin: 0;
 	padding: 0;
 	float: left;
+	justify-content: center;
 }
 
 #box2 {
 	margin: 0;
 	padding: 0;
 	text-align: center;
+	justify-content: center;
 }
 
 #box3 {
-	width: 300px;
+	max-width: 300px;
 	margin: 0;
 	padding: 0;
 	display: flex;
-	justify-content: flex-end;
+    justify-content: center;
 	font-weight: bold;
 }
 
@@ -2276,7 +2277,9 @@ body.contentpane a:hover {
 #menu-resp {
 	border-top: solid 1px #383ca6;
 	position: absolute;
-	width: 100%;
+	left: 0;
+	right: 0;
+	width: auto;
 	background-color: rgba(0, 0, 0, 0.47);
 	margin-top: 1px;
 	z-index: 9999;
@@ -2376,6 +2379,11 @@ body.contentpane a:hover {
 		margin: 30px 0;
 	}
 
+	h4 {
+		font-size: 1.5rem;
+		line-height: 1.2;
+	}
+	
 }
 
 @media screen and (max-width: 600px) {}
