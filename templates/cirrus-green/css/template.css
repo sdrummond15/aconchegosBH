@@ -1929,10 +1929,13 @@ a.feed-link {
 	color: #ffcb6b !important;
 }
 
-.custom-contato-rodape {
+.custom-contato-rodape a{
 	color: #f8f9fa;
 }
 
+.custom-contato-rodape a:hover {
+	color: #ffcb6b !important;
+}
 
 /** Editor **/
 
@@ -2407,7 +2410,7 @@ body.contentpane a:hover {
 		width: 180px;
 	}
 
-	.custom-contato-rodape p {
+	.custom-contato-rodape a {
 		font-size: 0.9rem;
 	}
 
@@ -2453,7 +2456,7 @@ body.contentpane a:hover {
 		width: 120px;
 	}
 
-	.custom-contato-rodape p {
+	.custom-contato-rodape a {
 		font-size: 0.75rem;
 	}
 
@@ -2531,7 +2534,7 @@ body.contentpane a:hover {
 		width: 80px;
 	}
 
-	.custom-contato-rodape p {
+	.custom-contato-rodape a {
 		font-size: 0.7rem;
 		text-align: center;
 
