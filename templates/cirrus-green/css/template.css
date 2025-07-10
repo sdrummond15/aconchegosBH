@@ -375,13 +375,11 @@ hr {
 .btn {
 	font-family: 'Droid Sans', sans-serif;
 	font-weight: 400;
-	font-size: 13.5px;
+	font-size: 1.275rem;
 	color: #FFF;
 	background-color: #ffb224;
-	border: solid 1.5px #a8e6cf;
-	padding: 4px;
-	padding-left: 12px;
-	padding-right: 12px;
+	border: solid 1.5px #ffb224;
+	padding: 0.75rem 1.5rem;
 	margin-left: 0px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -2468,6 +2466,20 @@ body.contentpane a:hover {
 		padding: 0.5rem 1rem;
 	}
 
+	#login-form input.button,
+	#member-profile button.validate,
+	#member-registration button.validate,
+	#user-registration button.validate,
+	.logout button,
+	.login button,
+	#searchForm button,
+	#contact-form button.validate,
+	#mailto-window button,
+	.btn {
+		font-size: 0.8rem;
+		padding: 0.5rem 1rem;
+	}
+
 	.bloco-leia-mais-home>div>a {
 		font-size: 0.9rem;
 		padding: 0.5rem 1rem;
@@ -2480,9 +2492,8 @@ body.contentpane a:hover {
 	#jform_contact_name,
 	#jform_contact_email,
 	#jform_contact_emailmsg,
-	#jform_contact_message
-	{
-	width: 90%;
+	#jform_contact_message {
+		width: 90%;
 	}
 }
 
@@ -2534,6 +2545,7 @@ body.contentpane a:hover {
 		display: flex;
 		justify-content: center;
 	}
+
 	#contact-form fieldset dl {
 		display: block;
 	}
@@ -2545,9 +2557,8 @@ body.contentpane a:hover {
 
 	#jform_contact_name,
 	#jform_contact_email,
-	#jform_contact_emailmsg
-	{
-	width: 22rem;
+	#jform_contact_emailmsg {
+		width: 22rem;
 	}
 
 	#jform_contact_message {
@@ -2593,9 +2604,8 @@ body.contentpane a:hover {
 	#jform_contact_name,
 	#jform_contact_email,
 	#jform_contact_emailmsg,
-	#jform_contact_message
-	{
-	width: 90%;
+	#jform_contact_message {
+		width: 90%;
 	}
 
 }
