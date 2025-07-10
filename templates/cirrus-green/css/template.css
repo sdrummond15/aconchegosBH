@@ -2365,6 +2365,10 @@ body.contentpane a:hover {
 		margin-left: 20px;
 		margin-right: 20px;
 	}
+
+	.imagem-sobre {
+		max-width: 100%;
+	}
 }
 
 @media screen and (max-width: 992px) {
