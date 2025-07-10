@@ -1547,24 +1547,40 @@ address span {
 	margin: 20px 0 0 0
 }
 
-#contact-form fieldset {
-	border: 0px;
-	float: left;
-	padding: 10px;
+#contact-form {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 20px;
+	gap: 20px;
+	max-width: 1170px;
 }
 
-#contact-form fieldset dl dt {
-	padding-top: 4px;
+#contact-form fieldset {
+	border: 0px;
+}
+
+#contact-form fieldset dl {
+	width: 100%;
+}
+
+#contact-form fieldset dl dt,
+#contact-form fieldset dl dd {
+	width: 100%;
+}
+
+#contact-form input,
+#contact-form textarea {
+	box-sizing: border-box;
 }
 
 #jform_contact_email_copy-lbl {
-	float: left;
-	padding-right: 6px;
+	/* padding-right: 6px; */
 }
 
 #jform_contact_email_copy {
-	margin: 4px;
+	/* margin: 4px; */
 }
+
 
 .star {
 	color: #cc0000;
@@ -1596,28 +1612,28 @@ div#display-misc div div dl dt span img {
 #jform_contact_email,
 #jform_contact_emailmsg,
 #jform_contact_message {
-	width: 500px;
 	border: 1px solid #7b9ff0;
 	outline: none;
 	font-size: 1.125rem;
 	font-family: 'Quicksand';
 	margin: 4px;
+	padding: 23px;
 	border-radius: 10px;
 }
 
 #jform_contact_name,
 #jform_contact_email,
 #jform_contact_emailmsg {
-	padding: 15px;
+	width: 30rem;
 	height: 1rem;
 }
 
 #jform_contact_message {
-	padding: 15px 0 0 15px;
+	width: 30rem;
 }
 
 textarea#jform_contact_message {
-	height: 9rem;
+	height: 10rem;
 }
 
 #contact-form-confirm-button {
@@ -2460,6 +2476,14 @@ body.contentpane a:hover {
 	.bloco-leia-mais-home img {
 		width: 140px;
 	}
+
+	#jform_contact_name,
+	#jform_contact_email,
+	#jform_contact_emailmsg,
+	#jform_contact_message
+	{
+	width: 90%;
+	}
 }
 
 @media screen and (max-width: 480px) {
@@ -2475,7 +2499,7 @@ body.contentpane a:hover {
 	#logo img {
 		width: 150px;
 	}
-	
+
 	.bloco-leia-mais-home {
 		flex-wrap: wrap;
 	}
@@ -2483,7 +2507,7 @@ body.contentpane a:hover {
 	.bloco-leia-mais-home img {
 		display: none;
 	}
-	
+
 	#footer_wrap {
 		padding-bottom: 0px;
 	}
@@ -2504,6 +2528,31 @@ body.contentpane a:hover {
 
 	#copyright img {
 		height: 10px;
+	}
+
+	.contact {
+		display: flex;
+		justify-content: center;
+	}
+	#contact-form fieldset dl {
+		display: block;
+	}
+
+	#contact-form fieldset dl dt,
+	#contact-form fieldset dl dd {
+		display: block;
+	}
+
+	#jform_contact_name,
+	#jform_contact_email,
+	#jform_contact_emailmsg
+	{
+	width: 22rem;
+	}
+
+	#jform_contact_message {
+		width: 22rem;
+		margin-right: 0px
 	}
 }
 
@@ -2537,7 +2586,16 @@ body.contentpane a:hover {
 		font-size: 20px;
 	}
 
-	#menu-resp a{
+	#menu-resp a {
 		font-size: 0.9rem;
 	}
+
+	#jform_contact_name,
+	#jform_contact_email,
+	#jform_contact_emailmsg,
+	#jform_contact_message
+	{
+	width: 90%;
+	}
+
 }
