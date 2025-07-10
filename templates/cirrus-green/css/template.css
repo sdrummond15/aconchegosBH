@@ -2569,6 +2569,14 @@ body.contentpane a:hover {
 		width: 22rem;
 		margin-right: 0px
 	}
+
+	.estrutura-secao img {
+		height: 170px;
+	}
+
+	p {
+		font-size: 0.9rem;
+	}
 }
 
 @media screen and (max-width: 400px) {
