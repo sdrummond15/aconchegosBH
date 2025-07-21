@@ -2173,6 +2173,9 @@ body.contentpane a:hover {
 	gap: 2rem;
 }
 
+.estrutura-secao img {
+	border-radius: 30px;
+}
 .estrutura-introducao {
 	margin-bottom: 3rem;
 	text-align: center;
@@ -2424,6 +2427,19 @@ body.contentpane a:hover {
 }
 
 @media screen and (max-width: 600px) {
+	#box_placeholder {
+		flex-direction: column;
+		justify-content: center;
+	}
+	
+	#box1 {
+		margin-left: 0;
+	}
+
+	#box3 {
+		margin-right: 0;
+	}
+
 	.service-image-wrapper {
 		padding-top: 200px;
 	}
@@ -2453,15 +2469,15 @@ body.contentpane a:hover {
 	}
 
 	.custom-logo-rodape img {
-		width: 120px;
+		width: 150px;
 	}
 
 	.custom-contato-rodape a {
-		font-size: 0.75rem;
+		font-size: 1.125rem;
 	}
 
 	.custom-endereco-rodape a {
-		font-size: 0.75rem
+		font-size: 1.125rem;
 	}
 
 	#copyright {
@@ -2530,20 +2546,6 @@ body.contentpane a:hover {
 		padding-bottom: 0px;
 	}
 
-	.custom-logo-rodape img {
-		width: 80px;
-	}
-
-	.custom-contato-rodape a {
-		font-size: 0.7rem;
-		text-align: center;
-
-	}
-
-	.custom-endereco-rodape a {
-		font-size: 0.7rem
-	}
-
 	#copyright img {
 		height: 10px;
 	}
@@ -2597,6 +2599,14 @@ body.contentpane a:hover {
 
 	p {
 		font-size: 0.8rem;
+	}
+
+	.custom-contato-rodape a {
+		font-size: 0.9rem;
+	}
+
+	.custom-endereco-rodape a {
+		font-size: 0.9rem;
 	}
 
 	.estrutura-secao img {
