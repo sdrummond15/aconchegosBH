@@ -33,7 +33,7 @@ joom_local.css.README umbenennen und anpassen
   float:left;
 }
 .jg_catelem_cat a{
-  height:100px;
+  height:200px;
 }
 .jg_catelem_photo {
   float:left;
@@ -49,7 +49,7 @@ joom_local.css.README umbenennen und anpassen
   text-align:center !important;
 }
 .jg_subcatelem_cat a{
-  height:100px;
+  height:200px;
 }
 .jg_subcatelem_photo {
   text-align:center !important;
