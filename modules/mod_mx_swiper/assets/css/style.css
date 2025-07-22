@@ -1113,3 +1113,10 @@ only screen and (max-device-width: 767px) {
     height: 50vh;
   }
 }
+
+
+@media screen and (max-width: 350px) {
+  .slider {
+    height: 40vh;
+  }
+}

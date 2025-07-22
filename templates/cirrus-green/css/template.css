@@ -2711,6 +2711,11 @@ body.contentpane a:hover {
 		padding-top: 175px;
 	}
 
+	ul.contact-social{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
 	.estrutura-secao {
 		flex-direction: column;
 		gap: 1rem;
