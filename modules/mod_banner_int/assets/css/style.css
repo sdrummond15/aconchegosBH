@@ -86,9 +86,3 @@
         height: 200px;
     }
 }
-
-@media screen and (max-width: 330px) {
-    #banner-int1 .banner-int1 .banner1{
-        height: 100px;
-    }
-}
