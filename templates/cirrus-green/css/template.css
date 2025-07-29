@@ -2377,6 +2377,17 @@ body.contentpane a:hover {
 	border-radius: 30px;
 }
 
+.sobre-mim {
+	display:flex;
+	align-items: center;
+
+}
+
+.sobre-mim img {
+	border-radius: 30px;
+	height: 400px;
+}
+
 @media screen and (max-width: 1024px) {
 	#box1 {
 		margin-left: 20px;
@@ -2429,6 +2440,10 @@ body.contentpane a:hover {
 		visibility: visible;
 		transform: translateY(0);
 		pointer-events: auto;
+	}
+
+	.sobre-mim img {
+		height: 300px;
 	}
 }
 
@@ -2551,6 +2566,10 @@ body.contentpane a:hover {
 	#jform_contact_message {
 		width: 90%;
 	}
+
+	.sobre-mim img{
+		height: 250px;
+	}
 }
 
 @media screen and (max-width: 480px) {
@@ -2652,6 +2671,10 @@ body.contentpane a:hover {
 
 	.estrutura-secao img {
 		height: 170px;
+	}
+
+	.sobre-mim {
+		flex-direction: column;
 	}
 }
 
