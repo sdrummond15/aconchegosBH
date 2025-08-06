@@ -38,6 +38,18 @@ JHtml::_('jquery.framework');
 	<link href='//fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css' />
 	<script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/sfhover.js"></script>
 	<script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/responsive-menu.js"></script>
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-E39R3NJSFY"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'G-E39R3NJSFY');
+	</script>
 </head>
 
 <body>
